@@ -3,14 +3,16 @@ M P W=b
 P ZX
 
 RN
+RV NO_FLOATING_POINT
 RV NO_IO
-RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U inverter_string%b	inverter_string.adb	54d3fba0 NE OO SU
+U main%b		main.adb		4f3ada8c NE OO SU
 W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+W geometry%s		geometry.adb		geometry.ali
+W objects%s		objects.adb		objects.ali
 
 D ada.ads		20210601075304 76789da1 ada%s
 D a-except.ads		20210601075304 291912d5 ada.exceptions%s
@@ -19,11 +21,12 @@ D a-stream.ads		20210601075304 119b8fb3 ada.streams%s
 D a-tags.ads		20210601075304 491b781d ada.tags%s
 D a-textio.ads		20210601075304 881db35a ada.text_io%s
 D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D geometry.ads		20241115180349 a1a6dfb8 geometry%s
 D interfac.ads		20210601075304 5ab55268 interfaces%s
 D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
-D inverter_string.adb	20241115170903 dcce48fa inverter_string%b
+D main.adb		20241115175406 932fabd7 main%b
+D objects.ads		20241115175334 f5ae1db9 objects%s
 D system.ads		20210601075304 4635ec04 system%s
-D s-conca2.ads		20210601075304 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210601075304 54135002 system.exception_table%s
 D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
@@ -33,20 +36,28 @@ D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
 D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
 D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
 D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-stratt.ads		20210601075304 aedef97e system.stream_attributes%s
 D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 20e8 10|1r6 1r23
+16K9*Ada 20e8 11|1r6 1r23
 X 6 a-textio.ads
-49K13*Text_IO 471e16 10|1w10 1r27
-242U14*Put 10|8s4
-249U14*Get_Line 10|9s4
-263U14*Put_Line 10|15s4
-X 10 inverter_string.adb
-3U11*Inverter_String 3b11 16l5 16t20
-4a4 Input{string} 9m13 12r22
-5i4 Last{natural} 9m20 11r18 12r28 15r50
-6a4 Inverted{string} 12m7 15r36
-11i8 I{integer} 12r16 12r35
+49K13*Text_IO 471e16 11|1w10 1r27
+X 8 geometry.ads
+3K9*Geometry 18e13 11|3w6 6r8 7r8
+4R9*Circle<12|2R9> 6e14 11|6r17
+5f7*Radius{float} 11|6m60
+8R9*Rectangle<12|2R9> 11e14 11|7r17
+9f7*Width{float} 11|7m63
+10f7*Height{float} 11|7m77
+X 11 main.adb
+5U11*Main 5b11 11l5 11t9
+6r4 C{8|4R9} 9r23
+7r4 R{8|8R9} 10r23
+X 12 objects.ads
+1K9*Objects 11|2w6 9r4 10r4 12|11e12
+3f7*X_Coord{float} 11|6m28 7m31
+4f7*Y_Coord{float} 11|6m44 7m47
+10U14*Print_Area 11|9s12 10s12
 

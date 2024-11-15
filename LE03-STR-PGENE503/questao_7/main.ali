@@ -1,0 +1,99 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV STATIC_DISPATCH_TABLES
+RV SPARK_05
+
+U main%b		main.adb		6dd1ed46 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.address_image%s  s-addima.adb		s-addima.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-ioexce.ads		20210601075304 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210601075304 119b8fb3 ada.streams%s
+D a-tags.ads		20210601075304 491b781d ada.tags%s
+D a-textio.ads		20210601075304 881db35a ada.text_io%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
+D main.adb		20241115181743 e5cc5e1c main%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-addima.ads		20210601075304 a1ec9d3a system.address_image%s
+D s-conca2.ads		20210601075304 02a0d7d0 system.concat_2%s
+D s-conca6.ads		20210601075304 d2c72db2 system.concat_6%s
+D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
+D s-imgboo.ads		20210601075304 f5d971eb system.img_bool%s
+D s-imenne.ads		20210601075304 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20210601075304 02dbe0c2 system.img_int%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
+D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210601075304 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210601075304 aedef97e system.stream_attributes%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 10|1w10 1r27
+166U14*New_Line 10|37s4
+263U14*Put_Line 10|31s4 32s4 35s4 39s4 40s4 43s4
+X 10 main.adb
+3U11*Main 3b11 45l5 45t9
+5E9 Month_Name 5e83 10r18 33r13 41r13
+5n24 Jan{5E9}
+5n29 Feb{5E9} 26r49
+5n34 Mar{5E9}
+5n39 Apr{5E9}
+5n44 May{5E9} 28r51
+5n49 Jun{5E9}
+5n54 Jul{5E9}
+5n59 Aug{5E9}
+5n64 Sep{5E9}
+5n69 Oct{5E9}
+5n74 Nov{5E9}
+5n79 Dec{5E9}
+7R9 Date 12e17 15r15
+9i10 Day{integer} 26m29 28m31 32r63 40r63
+10e10 Month{5E9} 26m40 28m42 33r41 41r41
+11i10 Year{integer} 26m54 28m56 34r38 42r38
+14H9 Person 16e14 18r20 22r22
+15r7 Birth{7R9} 26m19 28m21 32r57 33r35 34r32 40r57 41r35 42r32
+18R9 Man<14R9> 20e14 26r11
+19b7 Has_Beard{boolean} 26m69 35r51
+22R9 Woman<14R9> 24e14 28r11
+23i7 Breastfeeding_Children{integer} 28m71 43r68
+26r4 John{18R9} 32r52 33r30 34r27 35r46
+28r4 Jane{22R9} 40r52 41r30 42r27 43r63
+

@@ -1,0 +1,97 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U main%b		main.adb		126390ba NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.unchecked_deallocation%s
+W generic_stacks%s	generic_stacks.adb	generic_stacks.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-flteio.ads		20210601075304 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20210601075304 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210601075304 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210601075304 119b8fb3 ada.streams%s
+D a-tags.ads		20210601075304 491b781d ada.tags%s
+D a-textio.ads		20210601075304 881db35a ada.text_io%s
+D a-tiflio.ads		20210601075304 56fbda09 ada.text_io.float_io%s
+D a-tiinio.ads		20210601075304 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20210601075304 eff36322 ada.unchecked_deallocation%s
+D generic_stacks.ads	20241115184609 5ba23508 generic_stacks%s
+D generic_stacks.adb	20241115184638 79fbe8a8 generic_stacks%b
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
+D main.adb		20241115184847 d61dd8ec main%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-conca2.ads		20210601075304 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
+D s-imgint.ads		20210601075304 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20210601075304 c7a851e2 system.img_real%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
+D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r23 2r6 2r31 3r6 3r29
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 17|3w10 3r33
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 17|2w10 2r35
+X 8 a-textio.ads
+49K13*Text_IO 471e16 17|1w10 1r27
+263U14*Put_Line 17|28s4 29s4 30s4 31s4 36s10 42s13 46s10 52s13 56s10 62s13
+. 66s10
+X 10 a-tiinio.ads
+56U14*Get 17|32s4[4|18]
+X 13 generic_stacks.ads
+2+9 Stack_Element 17|11r48 12r46 13r47
+3k9*Generic_Stacks 24e19 17|4w6 11r33 12r31 13r32
+5R9 Stack 17|16r26[11] 17r24[12] 18r25[13]
+7U14 Push 17|37s24[11] 38s24[11] 39s24[11] 47s22[12] 48s22[12] 49s22[12]
+. 57s23[13] 58s23[13] 59s23[13]
+8U14 Pop 17|41s27[11] 51s25[12] 61s26[13]
+9V13 Is_Empty{boolean} 17|40s34[11] 50s32[12] 60s33[13]
+X 17 main.adb
+6U11*Main 6b11 69l5 69t9
+8A12 Fixed_String{string}<integer> 13r64 24r18
+11K12 Integer_Stack[13|3] 16r12 37r10 38r10 39r10 40r20 41r13
+12K12 Float_Stack[13|3] 17r12 47r10 48r10 49r10 50r20 51r13
+13K12 String_Stack[13|3] 18r12 57r10 58r10 59r10 60r20 61r13
+16r4 Int_S{13|5R9[11]} 37m29 37r29 38m29 38r29 39m29 39r29 40r43 41m31 41r31
+17r4 Flt_S{13|5R9[12]} 47m27 47r27 48m27 48r27 49m27 49r27 50r41 51m29 51r29
+18r4 Str_S{13|5R9[13]} 57m28 57r28 58m28 58r28 59m28 59r28 60r42 61m30 61r30
+21i4 Choice{integer} 32m8 34r9
+22i4 Int_Element{integer} 41m38 42r60
+23f4 Flt_Element{float} 51m36 52r58
+24a4 Str_Element{8A12} 61m37 62r46
+

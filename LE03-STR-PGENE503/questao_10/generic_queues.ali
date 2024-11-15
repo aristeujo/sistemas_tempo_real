@@ -1,0 +1,51 @@
+V "GNAT Lib v9"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV SPARK_05
+
+U generic_queues%b	generic_queues.adb	d12acab4 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_deallocation%s
+
+U generic_queues%s	generic_queues.ads	5ff65bda BN EE NE OO PK GE
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-uncdea.ads		20210601075304 eff36322 ada.unchecked_deallocation%s
+D generic_queues.ads	20241115183828 5ff65bda generic_queues%s
+D generic_queues.adb	20241115183833 612ff24c generic_queues%b
+D system.ads		20210601075304 4635ec04 system%s
+X 1 ada.ads
+16K9*Ada 20e8 4|1r6 5r26
+X 2 a-uncdea.ads
+17+9 Object 4|5r53
+18P9 Name(17+9) 4|5r69
+20u15*Unchecked_Deallocation 4|1w10 5r30
+X 3 generic_queues.ads
+2+9 Queue_Element 7r50 8r51 16r15 4|7r50 19r51
+3k9*Generic_Queues 2z9 13E9 25l5 25e19 4|3b14 42l5 42t19
+5R9*Queue 7r33 8r33 9r29 20c9 23e14 4|7r33 19r33 37r29
+7U14*Enqueue 7=22 7>40 4|7b14 17l8 17t15
+7r22 Q{5R9} 4|7b22 10r10 11m10 12m10 14r10 15m10
+7*40 Elem{2+9} 4|7b40 8r49
+8U14*Dequeue 8=22 8<40 4|19b14 35l8 35t15
+8r22 Q{5R9} 4|19b22 21r10 24r18 26r32 28m13 28r23 29r16 30m16
+8*40 Elem{2+9} 4|19b40 24m10
+9V13*Is_Empty{boolean} 9>22 4|37b13 40l8 40t16
+9r22 Q{5R9} 4|37b22 39r14
+13R9 Node 14r28 15c9 18e14 4|5r63 8r34
+14P9 Node_Ptr(13R9) 17r15 21r14 22r14 4|5r77 8r18 26r20
+16*7 Value{2+9} 4|8m40 24r25
+17p7 Next{14P9} 4|8m55 14m17 28r30
+21p7 Head{14P9} 4|11m12 21r12 24r19 24r20 26r34 28m15 28r24 28r25 29r18 39r16
+22p7 Tail{14P9} 4|10r12 12m12 14r11 14r12 15m12 30m18
+X 4 generic_queues.adb
+5U14 Free[2|20] 32s13
+8p7 New_Node{3|14P9} 11r20 12r20 14r25 15r20
+26p13 Temp{3|14P9} 32m18 32r18
+

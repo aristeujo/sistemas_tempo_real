@@ -1,0 +1,57 @@
+V "GNAT Lib v9"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV SPARK_05
+
+U stacks%b		stacks.adb		20965fdc NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_deallocation%s
+
+U stacks%s		stacks.ads		9687e924 EE NE OO PK
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20210601075304 eff36322 ada.unchecked_deallocation%s
+D stacks.ads		20241115184251 9687e924 stacks%s
+D stacks.adb		20241115184407 59e2d5da stacks%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+X 1 ada.ads
+16K9*Ada 20e8 6|1r6 5r26
+X 4 a-uncdea.ads
+17+9 Object 6|5r53
+18P9 Name(17+9) 6|5r69
+20u15*Unchecked_Deallocation 6|1w10 5r30
+X 5 stacks.ads
+1K9*Stacks 12E9 23l5 23e11 6|3b14 33l5 33t11
+3I9*Stack_Element<integer> 6r47 7r47 15r15 6|7r47 13r47
+4R9*Stack 6r30 7r29 8r29 19c9 21e14 6|7r30 13r29 28r29
+6U14*Push 6=19 6>37 6|7b14 11l8 11t12
+6r19 S{4R9} 6|7b19 8r63 10m7
+6i37 Elem{3I9} 6|7b37 8r49
+7U14*Pop 7=18 7<36 6|13b14 26l8 26t11
+7r18 S{4R9} 6|13b18 15r10 18r18 20r32 22m13 22r22
+7i36 Elem{3I9} 6|13b36 18m10
+8V13*Is_Empty{boolean} 8>22 6|28b13 31l8 31t16
+8r22 S{4R9} 6|28b22 30r14
+12R9 Node 13r28 14c9 17e14 6|5r63 8r34
+13P9 Node_Ptr(12R9) 16r15 20r13 6|5r77 8r18 20r20
+15i7*Value{3I9} 6|8m40 18r24
+16p7*Next{13P9} 6|8m55 22r28
+20p7*Top{13P9} 6|8r65 10m9 15r12 18r20 20r34 22m15 22r24 30r16
+X 6 stacks.adb
+5U14 Free[4|20] 23s13
+8p7 New_Node{5|13P9} 10r16
+20p13 Temp{5|13P9} 23m18 23r18
+
