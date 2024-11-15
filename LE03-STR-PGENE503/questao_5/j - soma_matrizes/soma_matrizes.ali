@@ -1,0 +1,74 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U soma_matrizes%b	soma_matrizes.adb	b3c81fd3 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-inteio.ads		20210601075304 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210601075304 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210601075304 119b8fb3 ada.streams%s
+D a-tags.ads		20210601075304 491b781d ada.tags%s
+D a-textio.ads		20210601075304 881db35a ada.text_io%s
+D a-tiinio.ads		20210601075304 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
+D soma_matrizes.adb	20241114201356 cd9e252d soma_matrizes%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-conca5.ads		20210601075304 875e432e system.concat_5%s
+D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
+D s-imgint.ads		20210601075304 02dbe0c2 system.img_int%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
+D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|2w10 2r35
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 1r27
+73I12*Field{integer}
+166U14*New_Line 12|39s7
+242U14*Put 12|15s10 23s10
+263U14*Put_Line 12|12s4 20s4 34s4
+X 8 a-tiinio.ads
+56U14*Get 12|16s10[3|18] 24s10[3|18]
+66U14*Put 12|37s10[3|18]
+68i7 Width{7|73I12} 12|37r23[3|18]
+X 12 soma_matrizes.adb
+4U11*Soma_Matrizes 4b11 41l5 41t18
+5i4 M{integer} 8r31 13r18 21r18 28r18 35r18
+6i4 N{integer} 8r39 14r21 22r21 29r21 36r21
+8A9 Matriz(integer)<integer><integer> 9r14
+9a4 A{8A9} 16m14 16r14 30r21
+9a7 B{8A9} 24m14 24r14 30r31
+9a10 C{8A9} 30m10 37r14
+13i8 I{integer} 15r44 16r16
+14i11 J{integer} 15r70 16r19
+21i8 I{integer} 23r44 24r16
+22i11 J{integer} 23r70 24r19
+28i8 I{integer} 30r12 30r23 30r33
+29i11 J{integer} 30r15 30r26 30r36
+35i8 I{integer} 37r16
+36i11 J{integer} 37r19
+

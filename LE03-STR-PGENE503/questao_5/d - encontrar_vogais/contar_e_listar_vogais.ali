@@ -1,0 +1,69 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK_05
+
+U contar_e_listar_vogais%b  contar_e_listar_vogais.adb  fbec13cf NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-inteio.ads		20210601075304 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210601075304 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210601075304 119b8fb3 ada.streams%s
+D a-tags.ads		20210601075304 491b781d ada.tags%s
+D a-textio.ads		20210601075304 881db35a ada.text_io%s
+D a-tiinio.ads		20210601075304 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D contar_e_listar_vogais.adb  20241114194045 85ba2931 contar_e_listar_vogais%b
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
+D system.ads		20210601075304 4635ec04 system%s
+D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
+D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 10|2w10 2r35
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|1w10 1r27
+73I12*Field{integer}
+166U14*New_Line 10|45s4 53s7
+208U14*Put 10|51s10
+242U14*Put 10|30s4 43s4 49s7
+249U14*Get_Line 10|31s4
+263U14*Put_Line 10|55s7
+X 8 a-tiinio.ads
+66U14*Put 10|44s4[3|18]
+68i7 Width{7|73I12} 10|44r20[3|18]
+X 10 contar_e_listar_vogais.adb
+4U11*Contar_E_Listar_Vogais 4b11 57l5 57t27
+5a4 Texto{string} 31m13 35r19 38r32
+6i4 Num_Vogais{integer} 36m10 36r24 44r8 48r7
+7i4 Last{natural} 31m20 34r18
+10A9 Conjunto_Vogais(character)<integer> 11r22
+11a4 Vogais{10A9} 20r16
+14a4 Encontradas{string} 38m10 51r14
+15i4 Index{natural} 37m10 37r19 38r22 50r21
+18V13 Is_Vogal{boolean} 18b13 18>23 26l8 26t16 35s10
+18e23 C{character} 21r13
+20e11 V=20:16{character} 21r17
+34i8 I{integer} 35r25 38r38
+50i11 J{integer} 51r26
+

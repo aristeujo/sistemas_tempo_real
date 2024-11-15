@@ -1,0 +1,76 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U soma_vetores%b	soma_vetores.adb	61693996 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-inteio.ads		20210601075304 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210601075304 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210601075304 119b8fb3 ada.streams%s
+D a-tags.ads		20210601075304 491b781d ada.tags%s
+D a-textio.ads		20210601075304 881db35a ada.text_io%s
+D a-tiinio.ads		20210601075304 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
+D soma_vetores.adb	20241111191737 1f3f0368 soma_vetores%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-conca2.ads		20210601075304 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20210601075304 0b705ca5 system.concat_3%s
+D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
+D s-imgint.ads		20210601075304 02dbe0c2 system.img_int%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
+D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|2w10 2r35
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 1r27
+166U14*New_Line 12|55s4
+242U14*Put 12|11s10 51s4 53s7
+263U14*Put_Line 12|42s4 44s4
+X 8 a-tiinio.ads
+56U14*Get 12|12s10[3|18]
+X 12 soma_vetores.adb
+4U11*Soma_Vetores 4b11 56l5 56t17
+5A9 Vetor(integer)<integer> 8r31 17r29 17r44 37r8 38r8 39r8
+8U14 Le_Vetor 8b14 8<23 14l8 14t16 43s4 45s4
+8a23 V{5A9} 10r16 12m14 12r14
+10i11 I{integer} 11r60 12r16
+17U14 Soma 17b14 17>19 17>22 17<36 34l8 34t12 48s4
+17a19 A{5A9} 18r51 21r18 25r10 26r35 27r21 29r24
+17a22 B{5A9} 18r61 21r25 25r21 29r13 30r35 31r21
+17a36 C{5A9} 21m10 27m13 31m13
+18i7 Min_Size{positive} 20r21 26r19 30r19
+20i11 I{integer} 21r12 21r20 21r27
+26i14 I{integer} 27r15 27r23
+30i14 I{integer} 31r15 31r23
+37a4 A{5A9} 39r31 43m13 48r9
+38a4 B{5A9} 39r41 45m13 48r12
+39a4 C{5A9} 48m15 52r13 53r25
+52i8 I{integer} 53r27
+
