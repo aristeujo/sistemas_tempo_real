@@ -1,0 +1,107 @@
+V "GNAT Lib v9"
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U rational%b		rational.adb		11fbcbf2 NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U rational%s		rational.ads		af753519 EE NE OO PK
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-inteio.ads		20210601075304 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210601075304 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210601075304 119b8fb3 ada.streams%s
+D a-tags.ads		20210601075304 491b781d ada.tags%s
+D a-textio.ads		20210601075304 881db35a ada.text_io%s
+D a-tiinio.ads		20210601075304 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
+D rational.ads		20241115191604 af753519 rational%s
+D rational.adb		20241115192500 c0d8c415 rational%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-conca3.ads		20210601075304 0b705ca5 system.concat_3%s
+D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
+D s-imgint.ads		20210601075304 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20210601075304 c7a851e2 system.img_real%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
+D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 13|2w10 2r35
+X 7 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 1r27
+X 12 rational.ads
+1K9*Rational 15E9 22l5 22e13 13|4b14 88l5 88t13
+3R9*Racional 5r81 6r32 6r49 7r32 7r49 8r32 8r49 9r32 9r49 10r27 11r26 15c9
+. 18e14 20r34 13|21r34 32r81 33r11 42r32 42r49 43r16 50r32 50r49 51r16 58r32
+. 58r49 59r16 66r32 66r49 67r16 77r27 82r26
+5V13*Create{3R9} 5>20 5>46 13|32b13 40l8 40t14 43s28 51s28 59s28 67s28
+5i20 Numerator{integer} 13|32b20 33r37
+5i46 Denominator{integer} 13|32b46 33r63 35r10
+6V14*"+"{3R9} 6>18 6>24 13|42b14 48l9 48t11
+6r18 Left{3R9} 13|42b18 43r35 43r90 44r35
+6r24 Right{3R9} 13|42b24 43r52 43r72 44r54
+7V14*"-"{3R9} 7>18 7>24 13|50b14 56l9 56t11
+7r18 Left{3R9} 13|50b18 51r35 51r90 52r35
+7r24 Right{3R9} 13|50b24 51r52 51r72 52r54
+8V14*"*"{3R9} 8>18 8>24 13|58b14 64l9 64t11
+8r18 Left{3R9} 13|58b18 59r35 60r35
+8r24 Right{3R9} 13|58b24 59r52 60r54
+9V14*"/"{3R9} 9>18 9>24 13|66b14 75l9 75t11
+9r18 Left{3R9} 13|66b18 67r35 68r35
+9r24 Right{3R9} 13|66b24 67r52 68r54 70r10
+10V13*To_String{string} 10>23 13|77b13 80l8 80t17
+10r23 R{3R9} 13|77b23 79r28 79r63
+11V13*To_Float{string} 11>22 13|82b13 86l8 86t16
+11r22 R{3R9} 13|82b22 83r31 83r52
+16i7*Numerator{integer} 13|22r28 24m9 24r24 27m12 27r28 33m24 43r40 43r78
+. 51r40 51r78 59r40 59r58 67r40 68r60 70r16 79r30 83r33
+17i7*Denominator{integer} 13|22r41 25m9 25r26 26r12 28m12 28r30 33m48 43r58
+. 43r95 44r40 44r60 51r58 51r95 52r40 52r60 60r40 60r60 67r58 68r40 79r65
+. 83r54
+20U14 Simplify 20=23 13|21b14 30l8 30t16 38s7 46s7 54s7 62s7 73s7
+20r23 R{3R9} 13|21b23 22r26 22r39 24m7 24r22 25m7 25r24 26r10 27m10 27r26
+. 28m10 28r28
+X 13 rational.adb
+6V13 GCD{integer} 6b13 6>17 6>20 19l8 19t11 22s22
+6i17 X{integer} 7r29
+6i20 Y{integer} 9r16
+7i7 A{integer} 14r18 15m13 18r14
+7i10 B{integer} 9m7 10r13 12r40 14m13 14r24
+12i13 Temp{integer} 15r18
+22i7 G{integer} 24r36 25r40
+33r7 R{12|3R9} 38m16 38r16 39r14
+43r7 Result{12|3R9} 46m16 46r16 47r14
+51r7 Result{12|3R9} 54m16 54r16 55r14
+59r7 Result{12|3R9} 62m16 62r16 63r14
+67r7 Result{12|3R9} 73m16 73r16 74r14
+83f7 Result{float} 85r40
+

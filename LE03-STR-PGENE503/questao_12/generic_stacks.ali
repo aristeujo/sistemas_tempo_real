@@ -1,0 +1,50 @@
+V "GNAT Lib v9"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV SPARK_05
+
+U generic_stacks%b	generic_stacks.adb	cdaabe82 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_deallocation%s
+
+U generic_stacks%s	generic_stacks.ads	5ba23508 BN EE NE OO PK GE
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-uncdea.ads		20210601075304 eff36322 ada.unchecked_deallocation%s
+D generic_stacks.ads	20241115184609 5ba23508 generic_stacks%s
+D generic_stacks.adb	20241115184638 79fbe8a8 generic_stacks%b
+D system.ads		20210601075304 4635ec04 system%s
+X 1 ada.ads
+16K9*Ada 20e8 4|1r6 5r26
+X 2 a-uncdea.ads
+17+9 Object 4|5r53
+18P9 Name(17+9) 4|5r69
+20u15*Unchecked_Deallocation 4|1w10 5r30
+X 3 generic_stacks.ads
+2+9 Stack_Element 7r47 8r47 16r15 4|7r47 13r47
+3k9*Generic_Stacks 2z9 13E9 24l5 24e19 4|3b14 33l5 33t19
+5R9*Stack 7r30 8r29 9r29 20c9 22e14 4|7r30 13r29 28r29
+7U14*Push 7=19 7>37 4|7b14 11l8 11t12
+7r19 S{5R9} 4|7b19 8r63 10m7
+7*37 Elem{2+9} 4|7b37 8r49
+8U14*Pop 8=18 8<36 4|13b14 26l8 26t11
+8r18 S{5R9} 4|13b18 15r10 18r18 20r32 22m13 22r22
+8*36 Elem{2+9} 4|13b36 18m10
+9V13*Is_Empty{boolean} 9>22 4|28b13 31l8 31t16
+9r22 S{5R9} 4|28b22 30r14
+13R9 Node 14r28 15c9 18e14 4|5r63 8r34
+14P9 Node_Ptr(13R9) 17r15 21r13 4|5r77 8r18 20r20
+16*7 Value{2+9} 4|8m40 18r24
+17p7 Next{14P9} 4|8m55 22r28
+21p7 Top{14P9} 4|8r65 10m9 15r12 18r19 18r20 20r34 22m15 22r23 22r24 30r16
+X 4 generic_stacks.adb
+5U14 Free[2|20] 23s13
+8p7 New_Node{3|14P9} 10r16
+20p13 Temp{3|14P9} 23m18 23r18
+

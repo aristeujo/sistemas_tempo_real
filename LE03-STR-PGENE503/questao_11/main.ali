@@ -4,13 +4,16 @@ P ZX
 
 RN
 RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U inverter_string%b	inverter_string.adb	54d3fba0 NE OO SU
+U main%b		main.adb		e622f977 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W stacks%s		stacks.adb		stacks.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
 
 D ada.ads		20210601075304 76789da1 ada%s
 D a-except.ads		20210601075304 291912d5 ada.exceptions%s
@@ -21,12 +24,14 @@ D a-textio.ads		20210601075304 881db35a ada.text_io%s
 D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210601075304 5ab55268 interfaces%s
 D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
-D inverter_string.adb	20241115170903 dcce48fa inverter_string%b
+D main.adb		20241115184337 f8b8a309 main%b
+D stacks.ads		20241115184251 9687e924 stacks%s
 D system.ads		20210601075304 4635ec04 system%s
 D s-conca2.ads		20210601075304 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210601075304 54135002 system.exception_table%s
 D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
+D s-imgint.ads		20210601075304 02dbe0c2 system.img_int%s
 D s-parame.ads		20210601075304 48ec542b system.parameters%s
 D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
 D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
@@ -40,13 +45,16 @@ X 1 ada.ads
 16K9*Ada 20e8 10|1r6 1r23
 X 6 a-textio.ads
 49K13*Text_IO 471e16 10|1w10 1r27
-242U14*Put 10|8s4
-249U14*Get_Line 10|9s4
-263U14*Put_Line 10|15s4
-X 10 inverter_string.adb
-3U11*Inverter_String 3b11 16l5 16t20
-4a4 Input{string} 9m13 12r22
-5i4 Last{natural} 9m20 11r18 12r28 15r50
-6a4 Inverted{string} 12m7 15r36
-11i8 I{integer} 12r16 12r35
+263U14*Put_Line 10|16s7
+X 10 main.adb
+4U11*Main 4b11 18l5 18t9
+5r4 S{11|4R9} 9m16 9r16 10m16 10r16 11m16 11r16 14r30 15m18 15r18
+6i4 Element{11|3I9} 15m21 16r62
+X 11 stacks.ads
+1K9*Stacks 10|2w6 5r8 6r14 9r4 10r4 11r4 14r14 15r7 11|23e11
+3I9*Stack_Element<integer> 10|6r21
+4R9*Stack 10|5r15 11|21e14
+6U14*Push 10|9s11 10s11 11s11
+7U14*Pop 10|15s14
+8V13*Is_Empty{boolean} 10|14s21
 

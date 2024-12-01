@@ -1,0 +1,58 @@
+V "GNAT Lib v9"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV SPARK_05
+
+U queues%b		queues.adb		103d7ee7 NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_deallocation%s
+
+U queues%s		queues.ads		a3377d10 EE NE OO PK
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20210601075304 eff36322 ada.unchecked_deallocation%s
+D queues.ads		20241115183139 a3377d10 queues%s
+D queues.adb		20241115183219 5cf960d5 queues%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+X 1 ada.ads
+16K9*Ada 20e8 6|1r6 5r26
+X 4 a-uncdea.ads
+17+9 Object 6|5r53
+18P9 Name(17+9) 6|5r69
+20u15*Unchecked_Deallocation 6|1w10 5r30
+X 5 queues.ads
+1K9*Queues 12E9 24l5 24e11 6|3b14 42l5 42t11
+3I9*Queue_Element<integer> 6r50 7r51 15r15 6|7r50 19r51
+4R9*Queue 6r33 7r33 8r29 19c9 22e14 6|7r33 19r33 37r29
+6U14*Enqueue 6=22 6>40 6|7b14 17l8 17t15
+6r22 Q{4R9} 6|7b22 10r10 11m10 12m10 14r10 15m10
+6i40 Elem{3I9} 6|7b40 8r49
+7U14*Dequeue 7=22 7<40 6|19b14 35l8 35t15
+7r22 Q{4R9} 6|19b22 21r10 24r18 26r32 28m13 28r23 29r16 30m16
+7i40 Elem{3I9} 6|19b40 24m10
+8V13*Is_Empty{boolean} 8>22 6|37b13 40l8 40t16
+8r22 Q{4R9} 6|37b22 39r14
+12R9 Node 13r28 14c9 17e14 6|5r63 8r34
+13P9 Node_Ptr(12R9) 16r15 20r14 21r14 6|5r77 8r18 26r20
+15i7*Value{3I9} 6|8m40 24r25
+16p7*Next{13P9} 6|8m55 14m17 28r30
+20p7*Head{13P9} 6|11m12 21r12 24r20 26r34 28m15 28r25 29r18 39r16
+21p7*Tail{13P9} 6|10r12 12m12 14r12 15m12 30m18
+X 6 queues.adb
+5U14 Free[4|20] 32s13
+8p7 New_Node{5|13P9} 11r20 12r20 14r25 15r20
+26p13 Temp{5|13P9} 32m18 32r18
+

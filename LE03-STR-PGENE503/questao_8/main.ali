@@ -4,13 +4,13 @@ P ZX
 
 RN
 RV NO_IO
-RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U inverter_string%b	inverter_string.adb	54d3fba0 NE OO SU
+U main%b		main.adb		eca73b4f NE OO SU
 W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+W people_types%s	people_types.adb	people_types.ali
 
 D ada.ads		20210601075304 76789da1 ada%s
 D a-except.ads		20210601075304 291912d5 ada.exceptions%s
@@ -21,9 +21,9 @@ D a-textio.ads		20210601075304 881db35a ada.text_io%s
 D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210601075304 5ab55268 interfaces%s
 D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
-D inverter_string.adb	20241115170903 dcce48fa inverter_string%b
+D main.adb		20241115182437 9d1863f2 main%b
+D people_types.ads	20241115182421 f9a2ebe7 people_types%s
 D system.ads		20210601075304 4635ec04 system%s
-D s-conca2.ads		20210601075304 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210601075304 54135002 system.exception_table%s
 D s-ficobl.ads		20210601075304 078245e4 system.file_control_block%s
@@ -33,6 +33,7 @@ D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
 D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
 D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
 D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-stratt.ads		20210601075304 aedef97e system.stream_attributes%s
 D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20210601075304 1b7d22d2 system.wch_con%s
@@ -40,13 +41,23 @@ X 1 ada.ads
 16K9*Ada 20e8 10|1r6 1r23
 X 6 a-textio.ads
 49K13*Text_IO 471e16 10|1w10 1r27
-242U14*Put 10|8s4
-249U14*Get_Line 10|9s4
-263U14*Put_Line 10|15s4
-X 10 inverter_string.adb
-3U11*Inverter_String 3b11 16l5 16t20
-4a4 Input{string} 9m13 12r22
-5i4 Last{natural} 9m20 11r18 12r28 15r50
-6a4 Inverted{string} 12m7 15r36
-11i8 I{integer} 12r16 12r35
+166U14*New_Line 10|14s4
+263U14*Put_Line 10|12s4 16s4
+X 10 main.adb
+4U11*Main 4b11 18l5 18t9
+8r4 John{11|18R9} 13r19
+9r4 Jane{11|24R9} 17r19
+X 11 people_types.ads
+1K9*People_Types 10|2w6 5r8 11|32e17
+3n29*Feb{3E9} 10|8r49
+3n44*May{3E9} 10|9r51
+7i10*Day{integer} 10|8m29 9m31
+8e10*Month{3E9} 10|8m40 9m42
+9i10*Year{integer} 10|8m54 9m56
+13r7*Birth{5R9} 10|8m19 9m21
+18R9*Man<12R9> 10|8r11 11|20e14
+19b7*Has_Beard{boolean} 10|8m69
+24R9*Woman<12R9> 10|9r11 11|26e14
+25i7*Breastfeeding_Children{integer} 10|9m71
+30U14*Analyze_Person 10|13s4 17s4
 
