@@ -1,0 +1,52 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV SPARK_05
+
+U main%b		main.adb		71f937b3 NE OO SU IL
+W controlalgorithms%s	controlalgorithms.adb	controlalgorithms.ali
+W datatypes%s		datatypes.ads		datatypes.ali
+W io%s			io.adb			io.ali
+
+D controlalgorithms.ads	20241127133400 b2acded1 controlalgorithms%s
+D datatypes.ads		20241127133235 b2860bb0 datatypes%s
+D io.ads		20241127140951 f12f802f io%s
+D main.adb		20241127140417 80fc62fd main%b
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z b b [main standard 5 11 none]
+G r c none [main standard 5 11 none] [read_temp io 3 15 none]
+G r c none [main standard 5 11 none] [read_pressure io 4 15 none]
+G r c none [main standard 5 11 none] [calculate_heating_setpoint controlalgorithms 3 15 none]
+G r c none [main standard 5 11 none] [calculate_valve_setpoint controlalgorithms 4 15 none]
+G r c none [main standard 5 11 none] [set_heating io 5 15 none]
+G r c none [main standard 5 11 none] [set_valve io 6 15 none]
+G r c none [main standard 5 11 none] [show_temp io 7 15 none]
+G r c none [main standard 5 11 none] [show_pressure io 8 15 none]
+X 1 controlalgorithms.ads
+2K9*ControlAlgorithms 5e22 4|2w6 2r29
+3U15*Calculate_Heating_Setpoint 4|14s5
+4U15*Calculate_Valve_Setpoint 4|15s5
+X 2 datatypes.ads
+1K9*DataTypes 6e14 4|1w6 1r21
+2I10*TemperatureValue<integer> 4|6r18
+3I10*PressureValue<integer> 4|7r15
+4E10*HeatingPosition 4e38 4|8r23
+5I10*ValvePosition<integer> 4|9r21
+X 3 io.ads
+2K9*IO 9e7 4|3w6 3r14
+3U15*Read_Temp 4|11s5
+4U15*Read_Pressure 4|12s5
+5U15*Set_Heating 4|17s5
+6U15*Set_Valve 4|18s5
+7U15*Show_Temp 4|20s5
+8U15*Show_Pressure 4|21s5
+X 4 main.adb
+5U11*main 5b11 22l5 22t9
+6i5 temperature{2|2I10} 11m15 14r32 20r15
+7i5 pressure{2|3I10} 12m19 15r30 21r19
+8e5 heating_position{2|4E10} 14m45 17r17
+9i5 valve_position{2|5I10} 15m40 18r15
+

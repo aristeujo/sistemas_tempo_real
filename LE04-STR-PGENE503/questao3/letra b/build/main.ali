@@ -1,0 +1,159 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U main%b		main.adb		864903ab NE OO SU IL
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W controlalgorithms%s	controlalgorithms.adb	controlalgorithms.ali
+W datatypes%s		datatypes.ads		datatypes.ali
+W io%s			io.adb			io.ali
+W semaphores%s		semaphores.adb		semaphores.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D controlalgorithms.ads	20241127142849 b2acded1 controlalgorithms%s
+D datatypes.ads		20241127142849 b2860bb0 datatypes%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D io.ads		20241127142849 f12f802f io%s
+D main.adb		20241127160528 824b339a main%b
+D semaphores.ads	20241127155008 5bf3b012 semaphores%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-memory.ads		20230707070819 597d6634 system.memory%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
+D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20230707070819 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 7 11 none]
+G r s semaphore [main standard 7 11 none] [semaphoreVIP semaphores 2 5 none]
+G r l semaphore [main standard 7 11 none] [semaphoreVDI semaphores 2 5 none]
+G r k semaphore [main standard 7 11 none] [semaphoreVDF semaphores 2 5 none]
+G r o none [main standard 7 11 none] [wait semaphores__semaphore 3 15 none]
+G r c none [main standard 7 11 none] [read_temp io 3 15 none]
+G r c none [main standard 7 11 none] [calculate_heating_setpoint controlalgorithms 3 15 none]
+G r c none [main standard 7 11 none] [set_heating io 5 15 none]
+G r o none [main standard 7 11 none] [signal semaphores__semaphore 4 15 none]
+G r c none [main standard 7 11 none] [read_pressure io 4 15 none]
+G r c none [main standard 7 11 none] [calculate_valve_setpoint controlalgorithms 4 15 none]
+G r c none [main standard 7 11 none] [set_valve io 6 15 none]
+G r c none [main standard 7 11 none] [show_temp io 7 15 none]
+G r c none [main standard 7 11 none] [show_pressure io 8 15 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|5r6 5r23
+X 8 a-textio.ads
+57K13*Text_IO 727e16 16|5w10 5r27
+264U14*New_Line 16|77s13
+X 10 controlalgorithms.ads
+2K9*ControlAlgorithms 5e22 16|2w6 2r29
+3U15*Calculate_Heating_Setpoint 16|35s13
+4U15*Calculate_Valve_Setpoint 16|55s13
+X 11 datatypes.ads
+1K9*DataTypes 6e14 16|1w6 1r21
+2I10*TemperatureValue<integer> 16|19r25 27r22
+3I10*PressureValue<integer> 16|20r22 47r19
+4E10*HeatingPosition 4e38 16|28r27
+5I10*ValvePosition<integer> 16|48r25
+X 15 io.ads
+2K9*IO 9e7 16|4w6 4r14
+3U15*Read_Temp 16|34s13
+4U15*Read_Pressure 16|54s13
+5U15*Set_Heating 16|36s13
+6U15*Set_Valve 16|56s13
+7U15*Show_Temp 16|75s13
+8U15*Show_Pressure 16|76s13
+X 16 main.adb
+7U11*main 7b11 88l5 88t9
+9w5 temp_available{17|2W20} 42r13 69r13
+10w5 temp_displayed{17|2W20} 31r13 82r13
+11w5 temp_mutex{17|2W20} 32r13 41r13 72r13 79r13
+13w5 press_available{17|2W20} 62r13 70r13
+14w5 press_displayed{17|2W20} 51r13 83r13
+15w5 press_mutex{17|2W20} 52r13 61r13 73r13 80r13
+17w5 sim_read_mutex{17|2W20}
+19i5 shared_temperature{11|2I10} 39m13 75r23
+20i5 shared_pressure{11|3I10} 59m13 76r27
+22t10 T 26b15 44l9 44t10
+23t10 P 46b15 64l9 64t10
+24t10 S 66b15 85l9 85t10
+27i9 temperature{11|2I10} 34m23 35r40 39r35
+28e9 heating_position{11|4E10} 35m53 36r25
+47i9 pressure{11|3I10} 54m27 55r38 59r32
+48i9 valve_position{11|5I10} 55m48 56r23
+X 17 semaphores.ads
+1K9*Semaphores 16|3w6 3r22 17|9e15
+2W20*Semaphore 16|9r21 10r21 11r17 13r22 14r22 15r18 17r21 17|8e18
+3Y15 Wait 16|31s28 32s24 51s29 52s25 69s28 70s29 72s24 73s25
+4Y15 Signal 16|41s24 42s28 61s25 62s29 79s24 80s25 82s28 83s29
+X 18 system.ads
+67M9*Address
+X 25 s-memory.ads
+53V13*Alloc{18|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{18|67M9} 105i<c,__gnat_realloc>22
+X 33 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 35 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

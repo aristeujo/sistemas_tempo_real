@@ -1,0 +1,92 @@
+V "GNAT Lib v10"
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U io%b			io.adb			d864e392 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W datatypes%s		datatypes.ads		datatypes.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U io%s			io.ads			43a98b9f EE NE OO PK IU
+W datatypes%s		datatypes.ads		datatypes.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D datatypes.ads		20241127133235 b2860bb0 datatypes%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D io.ads		20241127140951 f12f802f io%s
+D io.adb		20241127141000 c37234c4 io%b
+D system.ads		20230707070819 4635ec04 system%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imenne.ads		20230707070819 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [read_temp io 3 15 none]
+G c Z s b [read_pressure io 4 15 none]
+G c Z s b [set_heating io 5 15 none]
+G c Z s b [set_valve io 6 15 none]
+G c Z s b [show_temp io 7 15 none]
+G c Z s b [show_pressure io 8 15 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r19 1r44 1r57 8r9 16r9
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 14|1w23 1r61 8r13 16r13
+X 7 a-textio.ads
+57K13*Text_IO 727e16 14|1w10 1r48
+508U14*Put_Line 14|7s9 15s9 22s9 27s9 32s9 37s9
+X 8 a-tiinio.ads
+59U14*Get 14|8s29[3|18] 16s29[3|18]
+X 10 datatypes.ads
+1K9*DataTypes 6e14 13|1w6 1r21 14|2w6 2r21
+2I10*TemperatureValue<integer> 13|3r33 7r29 14|4r33 9r15 30r29 32r44
+3I10*PressureValue<integer> 13|4r37 8r33 14|12r37 17r15 35r33 37r41
+4E10*HeatingPosition 4e38 13|5r31 14|20r31 22r51
+5I10*ValvePosition<integer> 13|6r29 14|25r29 27r49
+X 13 io.ads
+2K9*IO 9l5 9e7 14|3b14 39l5 39t7
+3U15*Read_Temp 3<25 14|4b15 10l9 10t18
+3i25 TV{10|2I10} 14|4b25 9m9
+4U15*Read_Pressure 4<29 14|12b15 18l9 18t22
+4i29 PV{10|3I10} 14|12b29 17m9
+5U15*Set_Heating 5>27 14|20b15 23l9 23t20
+5e27 HP{10|4E10} 14|20b27 22r73
+6U15*Set_Valve 6>25 14|25b15 28l9 28t18
+6i25 VP{10|5I10} 14|25b25 27r69
+7U15*Show_Temp 7>25 14|30b15 33l9 33t18
+7i25 TV{10|2I10} 14|30b25 32r67
+8U15*Show_Pressure 8>29 14|35b15 38l9 38t22
+8i29 PV{10|3I10} 14|35b29 37r61
+X 14 io.adb
+5i9 sim_reading{integer} 8m33 9r32
+13i9 sim_reading{integer} 16m33 17r29
+

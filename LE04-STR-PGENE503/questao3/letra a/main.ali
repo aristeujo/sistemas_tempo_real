@@ -1,0 +1,52 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_RELATIVE_DELAY
+RV SPARK_05
+
+U main%b		main.adb		06808ae8 NE OO SU
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W controlalgorithms%s	controlalgorithms.adb	controlalgorithms.ali
+W datatypes%s		datatypes.ads		datatypes.ali
+W io%s			io.adb			io.ali
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-calend.ads		20210601075304 b288ede8 ada.calendar%s
+D a-caldel.ads		20210601075304 9f20b83d ada.calendar.delays%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D controlalgorithms.ads	20241127133400 b2acded1 controlalgorithms%s
+D datatypes.ads		20241127133234 b2860bb0 datatypes%s
+D io.ads		20241127140950 f12f802f io%s
+D main.adb		20241201194102 f785dfa6 main%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+X 5 controlalgorithms.ads
+2K9*ControlAlgorithms 5e22 8|3w6 3r29
+3U15*Calculate_Heating_Setpoint 8|18s7
+4U15*Calculate_Valve_Setpoint 8|19s7
+X 6 datatypes.ads
+1K9*DataTypes 6e14 8|1w6 1r21
+2I10*TemperatureValue<integer> 8|6r19
+3I10*PressureValue<integer> 8|7r23
+4E10*HeatingPosition 4e38 8|8r18
+5I10*ValvePosition<integer> 8|9r16
+X 7 io.ads
+2K9*IO 9e7 8|2w6 2r14
+3U15*Read_Temp 8|14s7
+4U15*Read_Pressure 8|15s7
+5U15*Set_Heating 8|22s7
+6U15*Set_Valve 8|23s7
+7U15*Show_Temp 8|26s7
+8U15*Show_Pressure 8|27s7
+X 8 main.adb
+5U11*Main 5b11 32l5 32t9
+6i4 Current_Temp{6|2I10} 14m17 18r34 26r17
+7i4 Current_Pressure{6|3I10} 15m21 19r32 27r21
+8e4 Heating_Pos{6|4E10} 18m48 22r19
+9i4 Valve_Pos{6|5I10} 19m50 23r17
+

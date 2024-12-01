@@ -1,0 +1,37 @@
+V "GNAT Lib v10"
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV SPARK_05
+
+U controlalgorithms%b	controlalgorithms.adb	37dff761 NE OO PK
+W datatypes%s		datatypes.ads		datatypes.ali
+
+U controlalgorithms%s	controlalgorithms.ads	002ad561 EE NE OO PK
+W datatypes%s		datatypes.ads		datatypes.ali
+
+D controlalgorithms.ads	20241127142849 b2acded1 controlalgorithms%s
+D controlalgorithms.adb	20241127142849 37f52200 controlalgorithms%b
+D datatypes.ads		20241127142849 b2860bb0 datatypes%s
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s b [calculate_heating_setpoint controlalgorithms 3 15 none]
+G c Z s b [calculate_valve_setpoint controlalgorithms 4 15 none]
+X 1 controlalgorithms.ads
+2K9*ControlAlgorithms 5l5 5e22 2|2b14 17l5 17t22
+3U15*Calculate_Heating_Setpoint 3>42 3<64 2|3b15 11l9 11t35
+3i42 TV{3|2I10} 2|3b42 6r12
+3e64 HP{3|4E10} 2|3b64 7m13 9m13
+4U15*Calculate_Valve_Setpoint 4>40 4<59 2|13b15 16l9 16t33
+4i40 PV{3|3I10} 2|13b40 15r91
+4i59 VP{3|5I10} 2|13b59 15m9
+X 3 datatypes.ads
+1K9*DataTypes 1|1w6 1r21 2|1w6 1r21 3|6e14
+2I10*TemperatureValue<integer> 1|3r46 2|3r46
+3I10*PressureValue<integer> 1|4r44 2|13r44 15r103
+4E10*HeatingPosition 1|3r72 2|3r72 3|4e38
+4n30*On{4E10} 2|7r19
+4n34*Off{4E10} 2|9r19
+5I10*ValvePosition<integer> 1|4r67 2|13r67 15r15 15r35 15r63
+

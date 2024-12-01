@@ -1,0 +1,112 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_PROTECTED_TYPES
+RV NO_RELATIVE_DELAY
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U main%b		main.adb		de899bcf NE OO SU
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W controlalgorithms%s	controlalgorithms.adb	controlalgorithms.ali
+W datatypes%s		datatypes.ads		datatypes.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W io%s			io.adb			io.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20210601075304 76789da1 ada%s
+D a-calend.ads		20210601075304 b288ede8 ada.calendar%s
+D a-caldel.ads		20210601075304 9f20b83d ada.calendar.delays%s
+D a-except.ads		20210601075304 291912d5 ada.exceptions%s
+D a-reatim.ads		20210601075304 0240fc73 ada.real_time%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D controlalgorithms.ads	20241127142848 b2acded1 controlalgorithms%s
+D datatypes.ads		20241127142848 b2860bb0 datatypes%s
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-c.ads		20210601075304 5421119b interfaces.c%s
+D io.ads		20241127142848 f12f802f io%s
+D main.adb		20241201194809 2f8cce81 main%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-atacco.ads		20210601075304 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-linux.ads		20210601075304 ed0b8aee system.linux%s
+D s-multip.ads		20210601075304 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20221024092806 0b994636 system.os_constants%s
+D s-osinte.ads		20221024092806 710cf8c6 system.os_interface%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-secsta.ads		20210601075304 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210601075304 a7318a92 system.soft_links%s
+D s-stache.ads		20210601075304 a37c21ec system.stack_checking%s
+D s-stausa.ads		20210601075304 017a0a05 system.stack_usage%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+D s-stoele.ads		20210601075304 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20210601075304 2b3f8252 system.task_info%s
+D s-taspri.ads		20210601075304 f40ac08d system.task_primitives%s
+D s-taprop.ads		20210601075304 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20210601075304 b9d612e2 system.tasking%s
+D s-taprob.ads		20210601075304 acd6094d system.tasking.protected_objects%s
+D s-tassta.ads		20210601075304 cca55c94 system.tasking.stages%s
+D s-traent.ads		20210601075304 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210601075304 34867c83 system.unsigned_types%s
+X 7 controlalgorithms.ads
+2K9*ControlAlgorithms 5e22 12|3w6 3r29
+3U15*Calculate_Heating_Setpoint 12|60s13
+4U15*Calculate_Valve_Setpoint 12|84s13
+X 8 datatypes.ads
+1K9*DataTypes 6e14 12|1w6 1r21
+2I10*TemperatureValue<integer> 12|9r43 11r40 14r21 19r43 21r22 37r40 53r22
+. 59r29 101r22
+3I10*PressureValue<integer> 12|10r40 12r37 15r18 28r40 30r22 42r37 77r26
+. 83r33 102r26
+4E10*HeatingPosition 4e38 12|54r21
+5I10*ValvePosition<integer> 12|78r19
+X 11 io.ads
+2K9*IO 9e7 12|2w6 2r14
+3U15*Read_Temp 12|58s10
+4U15*Read_Pressure 12|82s10
+5U15*Set_Heating 12|61s13
+6U15*Set_Valve 12|85s13
+7U15*Show_Temp 12|108s10
+8U15*Show_Pressure 12|109s10
+X 12 main.adb
+5U11*Main 5b11 117l5 117t9
+8w14 Shared_Data 18b19 46l8 46t19 62r13 64r13 86r13 88r13 105r26 106r30
+9U17 Write_Temperature 9>35 19b17 26l11 26t28 62s25 64s25
+9i35 Value{8|2I10} 19b35 21r13 22r28
+10U17 Write_Pressure 10>32 28b17 35l11 35t25 86s25 88s25
+10i32 Value{8|3I10} 28b32 30r13 31r25
+11V16 Read_Temperature{8|2I10} 37b16 40l11 40t27 105s38
+12V16 Read_Pressure{8|3I10} 42b16 45l11 45t24 106s42
+14i7 Temperature{8|2I10} 22r13 24r13 39r17
+15i7 Pressure{8|3I10} 31r13 33r13 44r17
+49t9 Temperature_Controller 52b14 70l8 70t30
+53i7 Current_Temp{8|2I10} 58m20 59r13 60r40 62r43
+54e7 Heating_Pos{8|4E10} 60m54 61r25
+73t9 Pressure_Controller 76b14 94l8 94t27
+77i7 Current_Pressure{8|3I10} 82m24 83r13 84r38 86r40
+78i7 Valve_Pos{8|5I10} 84m56 85r23
+97t9 Display_Controller 100b14 113l8 113t26
+101i7 Display_Temp{8|2I10} 105m10 108r20
+102i7 Display_Pressure{8|3I10} 106m10 109r24
+X 24 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
